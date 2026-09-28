@@ -1,16 +1,37 @@
 # Surveillance Nextstrain Builds
 
-**As a first step, this document is under governance review. When the review completes as appropriate per local and agency processes, the project team will be allowed to remove this notice. This material is draft.**
-
-**Template for clearance: This project serves as a template to aid projects in starting up and moving through clearance procedures. To start, create a new repository and implement the required [open practices](open_practices.md), train on and agree to adhere to the organization's [rules of behavior](rules_of_behavior.md), and [send a request through the create repo form](https://forms.office.com/Pages/ResponsePage.aspx?id=aQjnnNtg_USr6NJ2cHf8j44WSiOI6uNOvdWse4I-C2NUNk43NzMwODJTRzA4NFpCUk1RRU83RTFNVi4u) using language from this template as a Guide.**
-
-**General disclaimer** This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/cdc/#cdc_about_cio_mission-our-mission).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
-
 ## Overview
 
-Describe the purpose of your project. Add additional sections as necessary to help collaborators and potential collaborators understand and use your project.
+Surveillance Nextstrain Builds is an influenza surveillance pipeline using [Nextstrain](https://docs.nextstrain.org/en/latest/) that generates phylogenetic trees for three influenza subtypes: H1N1, H3N2, and B/Victoria.
+
+This repository contains the code necessary to create the docker container currently used in the pipeline.
+
+## Installation and Requirements
+
+1) Download and install Docker CLI.
+    - On Linux (GUI):
+        - Follow the instructions [here](https://docs.docker.com/desktop/) to download and install Docker Desktop which comes with Docker CLI.
+    - On Linux (CLI only):
+        - Follow the instructions [here](https://docs.docker.com/engine/) to download and install Docker Engine which comes with Docker CLI.
+
+2) Clone or download this repository.
+
+3) Download the CMAPLE v2.0.0 Linux tar file from the CMAPLE repository found [here](https://github.com/iqtree/cmaple/releases/tag/v2.0.0) and put the file in your local copy of this repository.
+
+4) From inside the repository, run the following docker command:
+    ```bash
+    docker compose create
+    ```
 
 ## Notices
+
+### Contact Info
+
+For direct correspondence on this project, feel free to contact: [Jessica Fuselier (CTR)](mailto:as08@cdc.gov), Influenza Division, National Center for Respiratory Diseases, Centers for Disease Control and Prevention.
+
+### General disclaimer
+
+This repository was created for use by CDC programs to collaborate on public health related projects in support of the [CDC mission](https://www.cdc.gov/about/cdc/#cdc_about_cio_mission-our-mission).  GitHub is not hosted by the CDC, but is a third party website used by CDC and its partners to share information and collaborate on software. CDC use of GitHub does not imply an endorsement of any one particular service, product, or enterprise. 
   
 ### Public Domain Standard Notice
 This repository constitutes a work of the United States Government and is not
